@@ -1,64 +1,169 @@
 import { motion } from "framer-motion";
-import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2.jpg";
-import product3 from "@/assets/product-3.jpg";
-import product4 from "@/assets/product-4.jpg";
+
+import product1 from "@/assets/costal-de-polipropileno-01.jpg";
+import product2 from "@/assets/costal-de-polipropileno-02.jpg";
+import product3 from "@/assets/costal-de-polipropileno-03.jpg";
+import product4 from "@/assets/costal-de-polipropileno-04.jpg";
+import product5 from "@/assets/costal-de-polipropileno-05.jpg";
+import product6 from "@/assets/costal-de-polipropileno-06.jpg";
+import product7 from "@/assets/costal-de-polipropileno-07.jpg";
+import product8 from "@/assets/costal-de-polipropileno-08.jpg";
+import product9 from "@/assets/costal-de-polipropileno-09.jpg";
+import product10 from "@/assets/costal-de-polipropileno-10.jpg";
+import product11 from "@/assets/costal-de-polipropileno-11.jpg";
+import product12 from "@/assets/costal-de-polipropileno-12.jpg";
+import product13 from "@/assets/costal-de-polipropileno-13.jpg";
+import product14 from "@/assets/costal-de-polipropileno-14.jpg";
+import product15 from "@/assets/costal-de-polipropileno-15.jpg";
+import product16 from "@/assets/costal-de-polipropileno-16.jpg";
+import product17 from "@/assets/costal-de-polipropileno-17.jpg";
+
 
 const products = [
   {
     id: 1,
-    name: "Costal de Yute Natural",
-    description: "Ideal para granos, café y productos agrícolas. Material 100% natural y biodegradable.",
-    sizes: "50kg, 70kg, 100kg",
+    name: "30 x 45 cms",
+    description: "Costal de Polipropileno. (5Kg)",
+    sizes: "",
     image: product1,
   },
   {
     id: 2,
-    name: "Costal de Polipropileno",
-    description: "Resistente y duradero para uso industrial. Disponible en blanco y colores.",
-    sizes: "25kg, 50kg, 100kg",
+    name: "35 x 82 cms",
+    description: "Costal de Polipropileno con fuelle. (Laminado, 25Kg)",
+    sizes: "",
     image: product2,
   },
   {
     id: 3,
-    name: "Costal para Café",
-    description: "Diseño especial para el transporte y almacenamiento de café en grano.",
-    sizes: "60kg, 69kg",
+    name: "35 x 65 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
     image: product3,
   },
   {
     id: 4,
-    name: "Costal Industrial",
-    description: "Uso pesado para construcción, arena y materiales de obra.",
-    sizes: "40kg, 50kg",
+    name: "45 x 90 cms",
+    description: "Costal de Polipropileno con fuelle. (Laminado)",
+    sizes: "",
     image: product4,
   },
+   {
+    id: 5,
+    name: "47 x 80 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product5,
+  },
+  {
+    id: 6,
+    name: "50 x 80 cms",
+    description: "Costal de Polipropileno. (25Kg)",
+    sizes: "",
+    image: product6,
+  },
+  {
+    id: 7,
+    name: "50 x 90 cms",
+    description: "Costal de Polipropileno. (50kg)",
+    sizes: "",
+    image: product7,
+  },
+  {
+    id: 8,
+    name: "50 x 95 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product8,
+  },
+  {
+    id: 9,
+    name: "54 x 90 cms",
+    description: "Costal de Polipropileno. (50Kg)",
+    sizes: "",
+    image: product9,
+  },
+  {
+    id: 10,
+    name: "54 x 100 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product10,
+  },
+  {
+    id: 11,
+    name: "54 x 102 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product11,
+  },
+  {
+    id: 12,
+    name: "57 x 90 cms",
+    description: "Costal de Polipropileno. (50Kg)",
+    sizes: "",
+    image: product12,
+  },
+   {
+    id: 13,
+    name: "57 x 100 cms",
+    description: "Costal de Polipropileno. (50Kg)",
+    sizes: "",
+    image: product13,
+  },
+  {
+    id: 14,
+    name: "60 x 95 cms",
+    description: "Costal de Polipropileno. (50Kg)",
+    sizes: "",
+    image: product14,
+  },
+  {
+    id: 15,
+    name: "60 x 95 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product15,
+  },
+  {
+    id: 16,
+    name: "70 x 115 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product16,
+  },
+  {
+    id: 17,
+    name: "70 x 120 cms",
+    description: "Costal de Polipropileno.",
+    sizes: "",
+    image: product17,
+  },
 ];
+
 
 const Products = () => {
   return (
     <section id="productos" className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         viewport={{ once: true }}
+         className="text-center mb-12"
         >
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Catálogo
-          </span>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mt-2 mb-4">
-            Nuestros Productos
+            Conoce nuestros productos
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Ofrecemos una amplia variedad de costales para diferentes industrias y necesidades. 
+            Ofrecemos una amplia variedad de costales para diferentes industrias y necesidades.
             Calidad garantizada desde Sahuayo, Michoacán.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
+        {
+          products.map((product, index) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 30 }}
@@ -70,7 +175,7 @@ const Products = () => {
               <div className="relative overflow-hidden aspect-square">
                 <img
                   src={product.image}
-                  alt={product.name}
+                  alt={`Costales de polipropileno de ${product.name} en Sahuayo, Michoacan`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -82,38 +187,11 @@ const Products = () => {
                 <p className="text-muted-foreground text-sm mb-3">
                   {product.description}
                 </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                    {product.sizes}
-                  </span>
-                  <a
-                    href="#contacto"
-                    className="text-sm font-semibold text-secondary hover:text-primary transition-colors"
-                  >
-                    Cotizar →
-                  </a>
-                </div>
               </div>
             </motion.div>
-          ))}
+          ))
+        }
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <p className="text-muted-foreground mb-4">
-            ¿No encuentras lo que buscas? Contamos con más productos disponibles.
-          </p>
-          <a
-            href="#contacto"
-            className="inline-flex items-center px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded-lg hover:bg-brand-blue-dark transition-colors"
-          >
-            Solicitar Catálogo Completo
-          </a>
-        </motion.div>
       </div>
     </section>
   );
